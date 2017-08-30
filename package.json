@@ -1,15 +1,15 @@
 {
   "name": "react-native-view-more-text",
-  "version": "1.1.2",
+  "version": "0.0.1",
   "description": "Expand/Collapse long text.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/nlt2390/react-native-view-more-text",
+  "homepage": "https://github.com/guilhermepontes/react-native-view-more-text",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nlt2390/react-native-view-more-text"
+    "url": "https://github.com/guilhermepontes/react-native-view-more-text"
   },
   "keywords": [
     "react",
@@ -19,5 +19,8 @@
     "text",
     "react-native-view-more-text"
   ],
-  "author": "nlt2390"
+  "author": "nlt2390 && guilhermepontes",
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  }
 }
