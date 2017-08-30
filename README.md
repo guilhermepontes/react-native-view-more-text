@@ -10,8 +10,8 @@ Working on IOS/Android
 ### Installation
 
 ```
-yarn add react-native-view-more-text
-npm install --save react-native-view-more-text
+yarn add guilhermepontes/react-native-view-more-text
+npm install --save guilhermepontes/:react-native-view-more-text
 ```
 
 ### Usage
