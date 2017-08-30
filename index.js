@@ -18,8 +18,8 @@ class ViewMoreText extends PureComponent {
 
   componentDidUpdate() {
     (this.state.numberOfLines === null)
-      ? (this.props.afterExpand || emptyFunc)();
-      : (this.props.afterCollapse || emptyFunc)();
+      ? (this.props.afterExpand || emptyFunc)()
+      : (this.props.afterCollapse || emptyFunc)()
   }
 
   componentWillReceiveProps() {
@@ -87,15 +87,13 @@ class ViewMoreText extends PureComponent {
     const { numberOfLines } = this.state;
 
     if (this.shouldShowMore){
-      if(numberOfLines > 0) {
-        return (this.props.renderViewMore || this.renderViewMore)(this.onPressMore);
-      } else {
-        return (this.props.renderViewLess || this.renderViewLess)(this.onPressLess);
-      }
+      return (numberOfLines > 0)
+        ? (this.props.renderViewMore || this.renderViewMore)(this.onPressMore)
+        : (this.props.renderViewLess || this.renderViewLess)(this.onPressLess)
     }
   }
 
-  render(){
+  render() {
     return (
       <View onLayout={this.onLayout} style={{opacity: this.state.opacity}}>
         <Text numberOfLines={this.state.numberOfLines}>
@@ -108,7 +106,7 @@ class ViewMoreText extends PureComponent {
       </View>
     )
   }
-})
+}
 
 ViewMoreText.propTypes: {
   renderViewMore: PropTypes.func,
@@ -117,6 +115,5 @@ ViewMoreText.propTypes: {
   afterExpand: PropTypes.func,
   numberOfLines: PropTypes.number.isRequired
 }
-
 
 export default ViewMoreText
