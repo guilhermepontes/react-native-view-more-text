@@ -108,7 +108,7 @@ class ViewMoreText extends PureComponent {
   }
 }
 
-ViewMoreText.propTypes: {
+ViewMoreText.propTypes = {
   renderViewMore: PropTypes.func,
   renderViewLess: PropTypes.func,
   afterCollapse: PropTypes.func,
