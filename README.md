@@ -24,7 +24,8 @@ npm install --save react-native-view-more-text
 
 ```jsx
   import React, { Component } from 'react';
-  import ViewMoreText from 'react-native-view-more-text';
+  import { Text } from 'react-native';
+  'import ViewMoreText from 'react-native-view-more-text';
 
 	class Example extends Component {
 		renderViewMore = onPress => <Text onPress={onPress}>View more</Text>
